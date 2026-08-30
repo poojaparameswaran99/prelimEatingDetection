@@ -1,0 +1,18 @@
+IMU Data
+
+Each .mat file in /Data/ includes 2 N*4 matrices, namely acceleration and gyroscope. Variable N represents the number of samples in each session. 
+The first column for both the acceleration and gyroscope matrices represents the timestamp in milliseconds. The next three columns represent the acceleration or rotation in the x,y and z axis respectively. 
+The accelerometer measures in g units and the gyroscope measures in degrees/second.
+
+Groundtruth
+
+Each .mat file in /GT/ includes a M*4 matrix, named GT. Variable M represents the number of annotation in-meal micro-movements for the specific subject. The second and third columns of each GT matrix represent the start and end points of the micro-movement respectively. The fourth column represents the observed micro-movement. The label to micro-movement mapping is provided below.
+
+1 -> no movement
+2 -> upwards
+3 -> downwards
+4 -> pick food
+5 -> mouth
+6 -> other movement
+
+ 
